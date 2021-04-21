@@ -149,8 +149,8 @@ function initFishes(scene, interval, speed, deadLine, width, height, hook, addSc
 	    gameover.displayWidth = screenHeight;
 	    gameover.displayHeight = screenHeight;
 	    var restart = scene.add.image(screenWidth/2, screenHeight*0.8, 'restart');
-	    restart.displayWidth = 200;
-	    restart.displayHeight = 200;
+	    restart.displayWidth = 0.15 * screenHeight;
+	    restart.displayHeight = 0.15 * screenHeight;
 	    restart.setInteractive();
 	    restart.on('pointerdown', function() {
 	      running = true;
